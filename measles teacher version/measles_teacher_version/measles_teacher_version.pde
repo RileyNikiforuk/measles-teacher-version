@@ -6,13 +6,17 @@ void setup() {
   //Display & Orientation
   size(1200, 900);
   displayOrientation(); 
-  appWidth = width;
-  appHeight = height;
+  appWidth = width; 
+  appHeight = height; 
   //
-  //Population
+  population();
   //
   //Theme: i.e Face
   faceSetup();
+  eyes();
+  nose();
+  mouth();
+  measlesDynamic();
 } //EndSetup
 //
 void draw() {
