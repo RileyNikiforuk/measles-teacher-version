@@ -17,6 +17,9 @@ float freckleX1, freckleY1, freckleX2, freckleY2, freckleX3, freckleY3, freckleX
 float textX, textY;
 color brown = #986344, red = #7f0001, blue = #7FB4BE, pink = #d1908e, yellow = #f6da60, freckle = #D07038;
 PFont font;
+int reset=1;
+color resetWhite=#FFFFFF;
+boolean nightMode=false;
 //
 void setup() {
   //Back Image with tint()
@@ -30,20 +33,27 @@ void setup() {
   //
   //Theme: i.e Face
   faceSetup();
-  eyes();
-  nose();
-  mouth();
-  measlesDynamic();
 } //EndSetup
 //
 void draw() {
   //OS System Start Button 
   //Splash screen evel start button | Measles reset button
   //Theme: measles with different sizes and colors
+  measlesDynamic();
+  eyes();
+  nose();
+  mouth();
 } //End draw
 //
 void keyPressed() {
   //keyboard shortcuts
+  if ( key=='N' | key=='n' ) {
+    if ( nightMode==false ) {
+      nightMode = true;
+    } else {
+      nightMode = false;
+    }
+  }
 } //End keyPressed
 //
 void mousePressed() {

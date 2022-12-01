@@ -100,7 +100,7 @@ void population() {
   freckleX14 = appWidth * 13.9/20;
   freckleY14 = appHeight * 9.7/20;
   freckleSize = appWidth * 0.4/20;
-  textX = appWidth * 7.4/20;
+  textX = appWidth * 7.75/20;
   textY = appHeight * 3/20;
   //
 } //End population
