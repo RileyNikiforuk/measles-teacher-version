@@ -102,6 +102,30 @@ void population() {
   freckleSize = appWidth * 0.4/20;
   textX = appWidth * 7.75/20;
   textY = appHeight * 3/20;
+  quiteButtonX = appWidth * 18/20;
+  quitButtonY = appHeight * 0/20;
+  quitButtonWidth = appWidth * 2/20;
+  quitButtonHeight = appHeight * 2/20;
+  textX2 = appWidth * 18.85/20;
+  textY2 = appHeight * 1.3/20;
+  startX = appWidth * 0.5/20;
+  startY = appHeight * 0.5/20;
+  startWidth = appWidth * 3/20;
+  startHeight = appHeight * 2/20;
+  textX3 = appWidth * 0.87/20;
+  textY3 = appHeight * 1.85/20;
+  pauseX = appWidth * 0.5/20;
+  pauseY = appHeight * 2.9/20;
+  pauseWidth = appWidth * 3/20;
+  pauseHeight = appHeight * 2/20;
+  textX4 = appWidth * 0.87/20;
+  textY4 = appHeight * 4.27/20;
+  resetX = appWidth * 0.5/20;
+  resetY = appHeight * 15.1/20;
+  resetWidth = appWidth * 3/20;
+  resetHeight = appHeight * 2/20;
+  textX5 = appWidth * 1/20;
+  textY5 = appHeight * 16.43/20;
   //
 } //End population
 //
