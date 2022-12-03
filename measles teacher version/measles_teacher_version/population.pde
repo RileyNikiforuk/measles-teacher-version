@@ -126,6 +126,12 @@ void population() {
   resetHeight = appHeight * 2/20;
   textX5 = appWidth * 1/20;
   textY5 = appHeight * 16.43/20;
+  nightModeX = appWidth * 0.5/20;
+  nightModeY = appHeight * 17.5/20;
+  nightModeWidth = appWidth * 3/20;
+  nightModeHeight = appHeight * 2/20;
+  nightModeTextX = appWidth * 0.7/20;
+  nightModeTextY = appHeight * 18.7/20;
   //
 } //End population
 //

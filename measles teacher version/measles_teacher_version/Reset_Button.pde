@@ -11,7 +11,7 @@ void reset() {
   } //End Hover Over
   textSize(45);
   fill(0);
-  text("RESET", textX5, textY5);
+  text("ERASE", textX5, textY5);
 } //End reset
 //
 //End reset subprogram

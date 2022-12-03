@@ -4,6 +4,7 @@ float faceX, faceY, faceDiameter;
 void faceSetup() {
   //Face: inscribing a circle in a square (i.e. logical rectangle)
   //Start from center of display
+  fill(0);
   rect(rectFaceX, rectFaceY, rectFaceWidth, rectFaceHeight); //Logical rectangle
   fill(brown);
   ellipse(faceX, faceY, faceDiameter, faceDiameter);
