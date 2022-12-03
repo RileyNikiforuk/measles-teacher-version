@@ -52,6 +52,7 @@ void draw() {
   quitButton();
   startButton();
   reset();
+  nightMode();
   if (measlesStart==true) pause();
 } //End draw
 //
@@ -75,13 +76,12 @@ void mousePressed() {
   if ( measlesStart==false && mouseX > startX && mouseX < startX+startWidth && mouseY > startY && mouseY < startY+startHeight ) {
     measlesStart=true;
   }
-   if ( measlesStart==true && mouseX > pauseX && mouseX < pauseX+pauseWidth && mouseY > pauseY && mouseY < pauseY+pauseHeight ) {
+  if ( measlesStart==true && mouseX > pauseX && mouseX < pauseX+pauseWidth && mouseY > pauseY && mouseY < pauseY+pauseHeight ) {
     if (pause==false) {
       pause=true;
     } else {
       pause=false;
     }
-  }
-} // End mousePressed
-//
-//End Main Program
+  } // End mousePressed
+  //
+}//End Main Program
