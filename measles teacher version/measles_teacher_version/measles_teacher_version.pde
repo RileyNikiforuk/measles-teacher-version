@@ -26,6 +26,7 @@ color resetWhite=#FFFFFF;
 boolean nightMode=false;
 boolean measlesStart=false;
 boolean pause=false;
+boolean erase=false;
 //
 void setup() {
   //Back Image with tint()
@@ -54,6 +55,18 @@ void draw() {
   reset();
   nightMode();
   if (measlesStart==true) pause();
+  if (erase) {
+    background(255);
+    faceSetup();
+    eyes();
+    nose();
+    mouth();
+    quitButton();
+    startButton();
+    reset();
+    nightMode();
+    erase=false;
+  }
 } //End draw
 //
 void keyPressed() {
@@ -82,6 +95,7 @@ void mousePressed() {
     } else {
       pause=false;
     }
+    if (mouseX > resetX && mouseX < resetX+resetWidth && mouseY > resetY && mouseY < resetY+resetHeight) erase=true;
   } // End mousePressed
   //
 }//End Main Program
