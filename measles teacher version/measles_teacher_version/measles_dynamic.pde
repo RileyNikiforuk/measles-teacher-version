@@ -10,12 +10,18 @@ void measlesDynamic() {
   measleX = random(rectFaceX+measleRadius, rectFaceX+rectFaceWidth-measleRadius); //use smaller dimension
   measleY = random(rectFaceY+measleRadius, rectFaceY+rectFaceHeight-measleRadius);
   //Nightmode
-  measlesColor = ( nightMode==true ) ? color(0, random(0, 255), 0) : color(255, random(0, 50), random(130)); ;
+  measlesColor = ( nightMode==true ) ? color(0, random(0, 255), 0) : color(255, random(0, 50), random(130)); 
+  ;
   //pink: (255, 0, 130)
   //Dark Red: (255, 50, 0)
   //
   noStroke();
   fill(measlesColor);
+  if (dist(measleX, measleY, faceX, faceY)>faceDiameter/2) {
+    fill(0);
+  } else {
+    fill(measlesColor);
+  }
   ellipse(measleX, measleY, measleDiameter, measleDiameter);
   fill(resetWhite);
   stroke(reset);
