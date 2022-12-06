@@ -36,6 +36,8 @@ void setup() {
   appWidth = width; 
   appHeight = height; 
   //
+  background(0);
+  //
   population();
   //
   //Theme: i.e Face
@@ -56,7 +58,7 @@ void draw() {
   nightModeButton();
   if (measlesStart==true) pause();
   if (erase) {
-    background(255);
+    background(0);
     faceSetup();
     eyes();
     nose();
